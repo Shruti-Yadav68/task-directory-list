@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.container {
+  height: 100vh;
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userUl {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  margin-inline: 20px;
+  width: 98%;
+}
+
+.userList {
+  display: flex;
+  border: 1px solid black;
+  padding-inline: 20px;
+  padding-block: 10px;
+  margin-block: 10px;
+  background-color: #CFE2F3;
+  width: 60%;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.listItem {
+  color: black;
+  text-decoration: none;
+}
+
+.backButton {
+  padding-block: 6px;
+  padding-inline: 15px;
+  border: 1px solid black;
+  background-color: #CFE2F3;
+  color: black;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.profileSection {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timerButton {
+  padding-block: 8px;
+  padding-inline: 10px;
+  background-color: #B6D7A8;
+  border-radius: 4px;
+}
+
+.timerDiv {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.profile {
+  font-weight: 500;
+  font-size: large;
+}
+
+.userSection {
+  padding-inline: 15px;
+  padding-block: 30px;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.nameSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.usernameSection {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 20px;
+}
+
+.postSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.singlePost {
+  width: 200px;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 200px;
+  margin-block: 20px;
+  cursor: pointer;
+}
+
+.postTitle {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.profileSection.blur {
+  filter: blur(5px);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  z-index: 2;
+  border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.selectCountry {
+  width: 300px;
+  height: 30px;
+  padding-inline: 20px;
+}
+
+.currentTime {
+  background-color: black;
+  color: white;
+  padding-inline: 20px;
+  padding-block: 6px;
+}
+
+@media only screen and (max-width: 768px) {
+  .userList {
+    width: 75%; 
+    margin-left: -35px;
+    flex-direction: column;
+  }
+
+  .nameSection {
+    flex-direction: column;
+    height: 70px;
+  }
+
+  .usernameSection {
+    flex-direction: column;
+    height: 70px;
+  }
+
+  .timerDiv {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .userSection {
+    width: 90%; 
+  }
+
+  .singlePost {
+    width: 100%; 
+  }
+
+  .userList {
+    flex-wrap: wrap;
+  }
+
+  .topSection {
+    flex-direction: column;
+  }
+
+  .backButton {
+    width: 30px;
+  }
+
+  .timerDiv {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .selectCountry {
+    width: 90px;
+    height: 30px;
+    padding-inline: 20px;
+  }
+
+  .popup {
+    height: 200px;
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+    border: 2px solid gray;
+    border-radius: 5px;
+  }
+  .popup-title {
+    margin-bottom: 10px;
+  }
+}
